@@ -111,19 +111,19 @@ button:hover,button:active{
         transform:  translate(-50%,-50%) rotateY(180deg);
     }
     20%{
-        transform:  translate(-50%,-60%) rotateY(180deg);
+        transform:  translate(-50%,-80%) rotateY(180deg);
     }
     40%{
         transform:  translate(-50%,-50%) rotateY(180deg);
     }
     60%{
-        transform:  translate(-50%,-60%) rotateY(180deg);
+        transform:  translate(-50%,-80%) rotateY(180deg);
     }
     80%{
         transform:  translate(-50%,-50%) rotateY(180deg);
     }
     100%{
-        transform:  translate(-50%,-60%) rotateY(180deg);
+        transform:  translate(-50%,-80%) rotateY(180deg);
     }
 }
 @keyframes shakehand_2{
@@ -131,19 +131,19 @@ button:hover,button:active{
         transform: translate(50%,-50%) rotateY(0deg);
     }
     20%{
-        transform: translate(50%,-60%) rotateY(0deg);
+        transform: translate(50%,-80%) rotateY(0deg);
     }
     40%{
         transform: translate(50%,-50%) rotateY(0deg);
     }
     60%{
-        transform: translate(50%,-60%) rotateY(0deg);
+        transform: translate(50%,-80%) rotateY(0deg);
     }
     80%{
         transform: translate(50%,-50%) rotateY(0deg);
     }
     100%{
-        transform: translate(50%,-60%) rotateY(0deg);
+        transform: translate(50%,-80%) rotateY(0deg);
     }
 }
 
