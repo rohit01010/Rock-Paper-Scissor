@@ -1,0 +1,221 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'lucida sans';
+}
+body {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.start{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(-45deg,#2023aa,#65adff);
+    z-index: 1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transition: 1s;
+}
+#start-btn{
+    transform: translateY(10px);
+}
+
+.game{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(-45deg,#2023aa,#65adff);  /* #fc2b0f,#ffe600);*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;  
+}
+.head{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    top: 0;
+    justify-content: space-between;
+    height: 200px;
+}
+.score{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 30px;
+    background-color: #2023aa55;
+    backdrop-filter: blur(20px);
+}
+h2{
+    background-color: #65adff66;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    padding: 15px 20px;
+    text-align: center;
+    border-radius: 15px;
+    color: #fff;
+}
+h1{
+    color: #fff;
+    background-color: rgba(225,225,225,0.2);
+    backdrop-filter: blur(20px);
+    padding: 15px 30px;
+    border-radius: 15px;
+    transition: 1s;
+    margin-top: 20px;
+}
+.screen{
+    position: relative;
+    width: 1000px;
+    height: 400px;
+    margin: 50px;
+}
+.screen img{
+    width: 250px;
+    margin: 0 30px;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%,-50%) rotateY(180deg);
+}
+#compImage{
+    right: 25%;
+    left: auto;
+    transform: translate(50%,-50%) rotateY(0deg);
+}
+button {
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background-color: rgba(225,225,225,1);
+    font-weight: 800;
+    letter-spacing: 1px;
+    padding: 10px 20px;
+    font-size: 20px;
+    margin: 20px;
+}
+button:hover,button:active{
+    transform: scale(0.95);
+}
+@keyframes shakehand_1{
+    0%{
+        transform:  translate(-50%,-50%) rotateY(180deg);
+    }
+    20%{
+        transform:  translate(-50%,-60%) rotateY(180deg);
+    }
+    40%{
+        transform:  translate(-50%,-50%) rotateY(180deg);
+    }
+    60%{
+        transform:  translate(-50%,-60%) rotateY(180deg);
+    }
+    80%{
+        transform:  translate(-50%,-50%) rotateY(180deg);
+    }
+    100%{
+        transform:  translate(-50%,-60%) rotateY(180deg);
+    }
+}
+@keyframes shakehand_2{
+    0%{
+        transform: translate(50%,-50%) rotateY(0deg);
+    }
+    20%{
+        transform: translate(50%,-60%) rotateY(0deg);
+    }
+    40%{
+        transform: translate(50%,-50%) rotateY(0deg);
+    }
+    60%{
+        transform: translate(50%,-60%) rotateY(0deg);
+    }
+    80%{
+        transform: translate(50%,-50%) rotateY(0deg);
+    }
+    100%{
+        transform: translate(50%,-60%) rotateY(0deg);
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .screen{
+        width: 100%;
+        margin: 20px;
+    }    
+    .screen img{
+        width: 200px;
+        position: absolute;
+        top: 50%;
+        left: 25%;
+        transform: translate(-50%,-50%) rotateY(180deg);
+    }
+    #compImage{
+        right: 25%;
+        left: auto;
+        transform: translate(50%,-50%) rotateY(0deg);
+    }
+}
+@media only screen and (max-width: 700px) {
+    .screen img{
+        width: 200px;
+        position: absolute;
+        top: 50%;
+        left: 15%;
+        transform: translate(-50%,-50%) rotateY(180deg);
+    }
+    #compImage{
+        right: 15%;
+        left: auto;
+        transform: translate(50%,-50%) rotateY(0deg);
+    }
+    h2{
+        font-size: 15px;
+    }
+    .start{
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width: 550px) {
+    .score{
+        padding: 0 10px;
+    }
+    .screen img{
+        width: 150px;
+        position: absolute;
+        top: 50%;
+        left: 15%;
+        transform: translate(-50%,-50%) rotateY(180deg);
+    }
+}
+@media only screen and (max-width: 400px) {
+    h1{
+        font-size: 20px;
+    }
+    h2{
+        padding: 10px;
+    }
+    .screen img{
+        width: 100px;
+        position: absolute;
+        top: 50%;
+        left: 15%;
+        transform: translate(-50%,-50%) rotateY(180deg);
+    }
+    .game{
+        padding: 10px;    
+    }
+    button{
+        font-size: 15px;
+        margin: 10px;
+    }
+}
